@@ -3,7 +3,7 @@ import requests
 
 def index(request):
     city = request.GET.get('city', 'Kathmandu')  # Set default city to Kathmandu
-    api_key = '1bbb554ed12ee010f5cd79333485ad71'
+    api_key = 'Your weather API'
     url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
     response = requests.get(url)
     data = response.json()
